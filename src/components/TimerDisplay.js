@@ -20,11 +20,9 @@ const TimerDisplay = () => {
     <Box className="timer-display">
       <Typography variant="h1" className="timer-time">{formattedTime}</Typography>
       <LinearProgress variant="determinate" value={progress} className="timer-progress" />
-      {completedPomodoros > 0 && (
-        <Typography variant="body2" className="timer-count">
-          已完成 {completedPomodoros} 個番茄 {tomatoIcons}
-        </Typography>
-      )}
+      <Typography variant="body2" className="timer-count">
+        已完成 {completedPomodoros} 個番茄 {tomatoIcons}
+      </Typography>
     </Box>
   );
 };
